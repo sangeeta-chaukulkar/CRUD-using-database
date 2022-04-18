@@ -4,6 +4,7 @@ const express = require('express');
 
 const adminController = require('../controllers/admin');
 
+
 const router = express.Router();
 
 // /admin/add-product => GET
@@ -21,6 +22,6 @@ router.post('/edit-product', adminController.postEditProduct);
 
 router.post('/delete-product', adminController.postDeleteProduct);
 
-router.post('/delete-product/:productId', adminController.deleteProduct);
+// router.post('/delete-product/:productId', adminController.deleteProduct);
 
 module.exports = router;
